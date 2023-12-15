@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-15T08:50:19.240Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:120.0) Gecko/20100101 Firefox/120.0" etag="pF695Qleox44WozdIumb" version="22.1.9" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-15T08:55:41.629Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:120.0) Gecko/20100101 Firefox/120.0" etag="-KguRNlTQoBOUBGj60sC" version="22.1.9" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="968" dy="1163" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1654" pageHeight="2336" math="0" shadow="0">
       <root>
@@ -104,9 +104,6 @@
         </mxCell>
         <mxCell id="8M17LlqYwC-zjmOERKzj-22" value="" style="line;strokeWidth=4;direction=south;html=1;perimeter=backbonePerimeter;points=[];outlineConnect=0;rotation=-45;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="1090.44" y="300" width="10" height="118.75" as="geometry" />
-        </mxCell>
-        <mxCell id="8M17LlqYwC-zjmOERKzj-27" value="Text" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="1010" y="200" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="8M17LlqYwC-zjmOERKzj-28" value="&lt;div&gt;//Ajouter la multipliciter et relire le document&lt;/div&gt;&lt;div&gt;//Faire attention multipliciter association ternaire&lt;/div&gt;&lt;div&gt;//Relier UE à d&#39;autre classe&lt;/div&gt;&lt;div&gt;//Relire phrases par phrases chaques documents&lt;/div&gt;&lt;div&gt;//Verifier si le sassociations sompt importantes pour savoir si on fait une classe ou une association,attributs&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="1420" y="-91" width="270" height="251" as="geometry" />
