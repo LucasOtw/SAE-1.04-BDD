@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-12-15T08:03:21.600Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:120.0) Gecko/20100101 Firefox/120.0" etag="FnP8QQ19WzyUpHxnEV4L" version="22.1.9" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-15T08:07:04.171Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:120.0) Gecko/20100101 Firefox/120.0" etag="aNQaPC8kEOND5rqjl14b" version="22.1.9" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="807" dy="1073" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1654" pageHeight="2336" math="0" shadow="0">
+    <mxGraphModel dx="1066" dy="1217" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1654" pageHeight="2336" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -69,15 +69,18 @@
           <mxGeometry x="941.25" y="-173.75" width="10" height="187.5" as="geometry" />
         </mxCell>
         <mxCell id="8M17LlqYwC-zjmOERKzj-11" value="Ressources" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;labelBackgroundColor=none;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="1140" y="390" width="190" height="110" as="geometry">
+          <mxGeometry x="1140" y="390" width="190" height="140" as="geometry">
             <mxRectangle x="230" y="140" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="8M17LlqYwC-zjmOERKzj-21" value="Connaissance STRING" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="8M17LlqYwC-zjmOERKzj-11">
           <mxGeometry y="26" width="190" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="8M17LlqYwC-zjmOERKzj-24" value="Nb Heures INT" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="8M17LlqYwC-zjmOERKzj-11">
+          <mxGeometry y="56" width="190" height="30" as="geometry" />
+        </mxCell>
         <mxCell id="8M17LlqYwC-zjmOERKzj-12" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;labelBackgroundColor=none;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" vertex="1" parent="8M17LlqYwC-zjmOERKzj-11">
-          <mxGeometry y="56" width="190" height="54" as="geometry" />
+          <mxGeometry y="86" width="190" height="54" as="geometry" />
         </mxCell>
         <mxCell id="8M17LlqYwC-zjmOERKzj-15" value="" style="line;strokeWidth=4;direction=south;html=1;perimeter=backbonePerimeter;points=[];outlineConnect=0;rotation=-90;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="706.88" y="-26.87" width="10" height="141.25" as="geometry" />
@@ -100,7 +103,7 @@
           <mxGeometry x="935.63" y="245.63" width="10" height="118.75" as="geometry" />
         </mxCell>
         <mxCell id="8M17LlqYwC-zjmOERKzj-20" value="" style="line;strokeWidth=4;direction=south;html=1;perimeter=backbonePerimeter;points=[];outlineConnect=0;rotation=-135;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="1091.14" y="189.22" width="10" height="118.02" as="geometry" />
+          <mxGeometry x="1088.58" y="195.4" width="10" height="110.78" as="geometry" />
         </mxCell>
         <mxCell id="8M17LlqYwC-zjmOERKzj-22" value="" style="line;strokeWidth=4;direction=south;html=1;perimeter=backbonePerimeter;points=[];outlineConnect=0;rotation=-45;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="1090.44" y="300" width="10" height="118.75" as="geometry" />
