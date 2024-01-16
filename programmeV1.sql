@@ -28,13 +28,8 @@ CREATE TABLE UE (
     PRIMARY KEY (code_UE)
 );
 
-CREATE TABLE semestre (
-    munero_sem VARCHAR(255),  
-    PRIMARY KEY (numero_sem)
-);
-
 CREATE TABLE niveau (
-    munero_N VARCHAR(255),  
+    numero_N VARCHAR(255),  
     PRIMARY KEY (numero_N)
 );
 
