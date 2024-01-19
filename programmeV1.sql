@@ -15,7 +15,7 @@ CREATE TABLE parcours (
     PRIMARY KEY (code_P)
 );
 
-CREATE TABLE SAE (
+CREATE TABLE sae (
     code_SAE VARCHAR(255),  
     lib_sae VARCHAR(255),
     nb_h_TD_enc INT,
@@ -23,7 +23,7 @@ CREATE TABLE SAE (
     PRIMARY KEY (code_SAE)
 );
 
-CREATE TABLE UE (
+CREATE TABLE ue (
     code_UE VARCHAR(255),  
     PRIMARY KEY (code_UE)
 );
@@ -38,8 +38,28 @@ CREATE TABLE competences (
     PRIMARY KEY (lib_competence)
 );
 
+CREATE TABLE activites (
+    lib_activite VARCHAR(255),  
+    PRIMARY KEY (lib_activite)
+);
+
 CREATE TABLE comprend_r (
     nb_h_TD_C INT,  
     nb_h_TP_C INT, 
-    PRIMARY KEY (nb_h_TD_C)
+    code_R VARCHAR(255),
+    code_SAE VARCHAR(255),
+    PRIMARY KEY (code_R, code_SAE),
+    FOREIGN KEY (code_R) REFERENCES Ressources(code_R),
+    FOREIGN KEY (code_SAE) REFERENCES SAE(code_SAE)
 );
+
+CREATE TABLE correspond (
+    lib_activite VARCHAR(255),
+    code_P VARCHAR(255),
+    numero_N INT,
+    PRIMARY KEY (lib_activite, code_P, numero_N),
+    FOREIGN KEY (lib_activite) REFERENCES activites(lib_activite),
+    FOREIGN KEY (code_P) REFERENCES parcours(code_P)
+    FOREIGN KEY (numero_N) REFERENCES niveau(numero_N)
+);
+
