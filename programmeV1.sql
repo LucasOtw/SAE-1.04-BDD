@@ -1,4 +1,4 @@
-CREATE TABLE ressources (
+CREATE TABLE _ressources (
     code_R VARCHAR(255),  
     lib_R VARCHAR(255),
     nb_h_CM_PN NUMERIC(3),
@@ -7,7 +7,7 @@ CREATE TABLE ressources (
     PRIMARY KEY (code_R)
 );
 
-CREATE TABLE parcours (
+CREATE TABLE _parcours (
     code_P VARCHAR(255),  
     libelle_parcours VARCHAR(255),
     nbre_gpe_TD_P NUMERIC(3),
@@ -15,7 +15,7 @@ CREATE TABLE parcours (
     PRIMARY KEY (code_P)
 );
 
-CREATE TABLE sae (
+CREATE TABLE _sae (
     code_SAE VARCHAR(255),  
     lib_sae VARCHAR(255),
     nb_h_TD_enc NUMERIC(3),
@@ -23,27 +23,27 @@ CREATE TABLE sae (
     PRIMARY KEY (code_SAE)
 );
 
-CREATE TABLE ue (
+CREATE TABLE _ue (
     code_UE VARCHAR(255),  
     PRIMARY KEY (code_UE)
 );
 
-CREATE TABLE niveau (
+CREATE TABLE _niveau (
     numero_N VARCHAR(255),  
     PRIMARY KEY (numero_N)
 );
 
-CREATE TABLE competences (
+CREATE TABLE _competences (
     lib_competence VARCHAR(255),  
     PRIMARY KEY (lib_competence)
 );
 
-CREATE TABLE activites (
+CREATE TABLE _activites (
     lib_activite VARCHAR(255),  
     PRIMARY KEY (lib_activite)
 );
 
-CREATE TABLE comprend_r (
+CREATE TABLE _comprend_r (
     nb_h_TD_C NUMERIC(3),  
     nb_h_TP_C NUMERIC(3), 
     code_R VARCHAR(255),
@@ -53,7 +53,7 @@ CREATE TABLE comprend_r (
     FOREIGN KEY (code_SAE) REFERENCES SAE(code_SAE)
 );
 
-CREATE TABLE correspond (
+CREATE TABLE _correspond (
     lib_activite VARCHAR(255),
     code_P VARCHAR(255),
     numero_N NUMERIC(3),
