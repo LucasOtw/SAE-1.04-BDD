@@ -1,25 +1,25 @@
 CREATE TABLE ressources (
     code_R VARCHAR(255),  
     lib_R VARCHAR(255),
-    nb_h_CM_PN INT,
-    nb_h_TD_PN INT,
-    nb_h_TP_PN INT,
+    nb_h_CM_PN NUMERIC(3),
+    nb_h_TD_PN NUMERIC(3),
+    nb_h_TP_PN NUMERIC(3),
     PRIMARY KEY (code_R)
 );
 
 CREATE TABLE parcours (
     code_P VARCHAR(255),  
     libelle_parcours VARCHAR(255),
-    nbre_gpe_TD_P INT,
-    nbre_gpe_TP_P INT,
+    nbre_gpe_TD_P NUMERIC(3),
+    nbre_gpe_TP_P NUMERIC(3),
     PRIMARY KEY (code_P)
 );
 
 CREATE TABLE sae (
     code_SAE VARCHAR(255),  
     lib_sae VARCHAR(255),
-    nb_h_TD_enc INT,
-    nbre_gpe_TP_projet_autonomie INT,
+    nb_h_TD_enc NUMERIC(3),
+    nbre_gpe_TP_projet_autonomie NUMERIC(3),
     PRIMARY KEY (code_SAE)
 );
 
@@ -44,8 +44,8 @@ CREATE TABLE activites (
 );
 
 CREATE TABLE comprend_r (
-    nb_h_TD_C INT,  
-    nb_h_TP_C INT, 
+    nb_h_TD_C NUMERIC(3),  
+    nb_h_TP_C NUMERIC(3), 
     code_R VARCHAR(255),
     code_SAE VARCHAR(255),
     PRIMARY KEY (code_R, code_SAE),
@@ -56,7 +56,7 @@ CREATE TABLE comprend_r (
 CREATE TABLE correspond (
     lib_activite VARCHAR(255),
     code_P VARCHAR(255),
-    numero_N INT,
+    numero_N NUMERIC(3),
     PRIMARY KEY (lib_activite, code_P, numero_N),
     FOREIGN KEY (lib_activite) REFERENCES activites(lib_activite),
     FOREIGN KEY (code_P) REFERENCES parcours(code_P)
