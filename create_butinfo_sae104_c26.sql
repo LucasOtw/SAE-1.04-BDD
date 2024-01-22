@@ -63,3 +63,13 @@ CREATE TABLE _correspond (
     FOREIGN KEY (numero_N) REFERENCES niveau(numero_N)
 );
 
+CREATE TABLE _est_enseignee (
+    code_P VARCHAR(255),
+    code_R VARCHAR(255),
+    PRIMARY KEY (code_P, code_R),
+    FOREIGN KEY (code_P) REFERENCES parcours(code_P)
+    FOREIGN KEY (code_R) REFERENCES ressources(code_R)
+);
+
+
+
