@@ -34,7 +34,7 @@ CREATE TABLE _semestre (
 );
 
 CREATE TABLE _niveau (
-    numero_N VARCHAR(255),  
+    numero_N NUMERIC(3),  
     PRIMARY KEY (numero_N)
 );
 
