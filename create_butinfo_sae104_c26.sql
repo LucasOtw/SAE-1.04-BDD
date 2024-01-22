@@ -64,7 +64,7 @@ CREATE TABLE _correspond (
     numero_N NUMERIC(3),
     PRIMARY KEY (lib_activite, code_P, numero_N),
     FOREIGN KEY (lib_activite) REFERENCES _activites(lib_activite),
-    FOREIGN KEY (code_P) REFERENCES _parcours(code_P)
+    FOREIGN KEY (code_P) REFERENCES _parcours(code_P),
     FOREIGN KEY (numero_N) REFERENCES _niveau(numero_N)
 );
 
@@ -72,7 +72,7 @@ CREATE TABLE _est_enseignee (
     code_P VARCHAR(255),
     code_R VARCHAR(255),
     PRIMARY KEY (code_P, code_R),
-    FOREIGN KEY (code_P) REFERENCES _parcours(code_P)
+    FOREIGN KEY (code_P) REFERENCES _parcours(code_P),
     FOREIGN KEY (code_R) REFERENCES _ressources(code_R)
 );
 
@@ -102,7 +102,7 @@ CREATE TABLE _dans (
 );
 
 CREATE TABLE _fait_partie (
-    numero_N VARCHAR(255),
+    numero_N NUMERIC(3),
     numero_sem VARCHAR(255),
     PRIMARY KEY (numero_N, numero_sem),
     FOREIGN KEY (numero_N) REFERENCES _niveau(numero_N),
