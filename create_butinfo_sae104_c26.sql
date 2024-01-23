@@ -1,3 +1,7 @@
+CREATE SCHEMA "programme_but";
+SET SCHEMA 'programme_but';
+
+
 CREATE TABLE _ressources (
     code_R VARCHAR(255),  
     lib_R VARCHAR(255),
